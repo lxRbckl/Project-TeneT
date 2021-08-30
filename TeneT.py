@@ -149,7 +149,7 @@ if (__name__ == '__main__'):
             # >
 
             # Positive <
-            if (float(multiTable[j] > 0)):
+            if (float(multiTable[j] >= 0)):
 
                 formula = str(((offsetList[i] + (float(multiTable[j]) * float(deltaList[j]))) % 38))
 
