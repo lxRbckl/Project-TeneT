@@ -142,17 +142,16 @@ if (__name__ == '__main__'):
         for j in range(len(multiTable)):
 
             # Negative <
-            if (float(multiTable[j]) < 0):
+            if (int(multiTable[j]) < 0):
 
-                formula = str(((offsetList[i] - (float(multiTable[j]) * float(deltaList[j]))) % 38))
+                formula = str(((offsetList[i] - (abs(int(multiTable[j])) * int(deltaList[j]))) % 38))
 
             # >
 
             # Positive <
-            if (float(multiTable[j] >= 0)):
+            elif (int(multiTable[j] >= 0)):
 
-                formula = str(((offsetList[i] + (float(multiTable[j]) * float(deltaList[j]))) % 38))
-
+                formula = str(((offsetList[i] + (int(multiTable[j]) * int(deltaList[j]))) % 38))
 
             # >
 
