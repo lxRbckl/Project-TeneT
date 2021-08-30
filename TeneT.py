@@ -119,16 +119,22 @@ if (__name__ == '__main__'):
         if (inputVariable not in ['1', '2']):
 
             print('\nInvalid Input.\n')
+            continue
 
         # >
 
-        else:
+        # if New File <
+        elif (inputVariable == '1'):
 
             createFile()
             #start('TeneT.xls')
 
-            input('\n< Hit Enter to Compile >')
-            break
+        # >
+
+        input('\n< Hit Enter to Compile >')
+        break
+
+        # >
 
     # >
 
