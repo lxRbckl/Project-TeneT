@@ -134,14 +134,28 @@ if (__name__ == '__main__'):
 
     # Read File <
     listVariable = []
-    inputList, offsetList, deltaList = readFile()
     multiTable = setting['multiplicationValue']
+    inputList, offsetList, deltaList = readFile()
     for i in range(len(offsetList)):
 
         var = []
         for j in range(len(multiTable)):
 
-            formula = str(((offsetList[i] * (int(multiTable[j]) * int(deltaList[j]))) % 38))
+            # Negative <
+            if (float(multiTable[j]) < 0):
+
+                formula = str(((offsetList[i] - (float(multiTable[j]) * float(deltaList[j]))) % 38))
+
+            # >
+
+            # Positive <
+            if (float(multiTable[j] > 0)):
+
+                formula = str(((offsetList[i] + (float(multiTable[j]) * float(deltaList[j]))) % 38))
+
+
+            # >
+
             [var.append(int(formula)) for i in range(inputList[j])]
 
         listVariable.append(var)
