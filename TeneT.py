@@ -108,17 +108,30 @@ def writeFile(arg):
 # Main <
 if (__name__ == '__main__'):
 
-    # Create File <
-    input('< Hit Enter to Create File >')
+    # Input <
+    while (True):
 
-    createFile()
-    #start('TeneT.xls')
+        strVariable = '1.\tCreate Excel\n2.\tOpen Excel'
+        inputVariable = input(f'{strVariable}\n\nInput : ')
+
+        # if Invalid Input <
+        if (inputVariable not in ['1', '2']):
+
+            print('\nInvalid Input.\n')
+
+        # >
+
+        else:
+
+            createFile()
+            #start('TeneT.xls')
+
+            input('\n< Hit Enter to Compile >')
+            break
 
     # >
 
     # Read File <
-    input('< Hit Enter to Write File >')
-
     listVariable = []
     inputList, offsetList, deltaList = readFile()
     multiTable = setting['multiplicationTableValue']
