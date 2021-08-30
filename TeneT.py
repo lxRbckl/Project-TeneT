@@ -29,6 +29,7 @@ def createFile():
     # >
 
     # Write <
+    [ws.write((c + 2), 0, i, easyxf(setting['multiplicationStyle'])) for c, i in enumerate(setting['multiplicationValue'])]
     [ws.write((c + 2), 3, i, easyxf(setting['wheelSpeedStyle'])) for c, i in enumerate(setting['wheelSpeedValue'])]
     ws.write(1, 4, 'Offset', easyxf(setting['offsetStyle']))
     ws.write(1, 5, 'Delta', easyxf(setting['deltaStyle']))
@@ -134,7 +135,7 @@ if (__name__ == '__main__'):
     # Read File <
     listVariable = []
     inputList, offsetList, deltaList = readFile()
-    multiTable = setting['multiplicationTableValue']
+    multiTable = setting['multiplicationValue']
     for i in range(len(offsetList)):
 
         var = []

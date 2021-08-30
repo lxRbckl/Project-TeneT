@@ -1,4 +1,6 @@
 {
+  "multiplicationStyle" : "font: bold True, underline True; align: horiz centre",
+  "multiplicationValue" : [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7],
   "wheelSpeedStyle" : "font: bold True; align: horiz centre",
   "wheelSpeedValue" : [
     "15",
@@ -33,6 +35,5 @@
   ],
   "offsetStyle" : "font: bold True, underline True; align: horiz centre",
   "deltaStyle" : "font: bold True, underline True; align: horiz centre",
-  "inputStyle" : "font: bold True, underline True; align: horiz centre",
-  "multiplicationTableValue" : [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+  "inputStyle" : "font: bold True, underline True; align: horiz centre"
 }
