@@ -3,5 +3,9 @@
 
 ### Installation
 ```
+pip3 install xlrd
+pip3 install xlwt
 
+cd
+git clone https://github.com/lxRbckl/Project-TeneT.git
 ```
