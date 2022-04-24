@@ -1,7 +1,7 @@
 ## [`Project TeneT`](http://lxrbckl.com/Project-TeneT)
 > A reverse Monte Carlo building simulation for visual ballistics on roulette wheels with RRS systems. Fall 2021.
 
-### Installation
+### `Installation`
 ```
 pip3 install xlrd
 pip3 install xlwt
